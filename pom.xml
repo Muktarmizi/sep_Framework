@@ -6,7 +6,7 @@
   <name>Enthrall IT</name>
   <description>Its All about Enthrall IT</description>
 
-<dependencies>
+  	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<!-- Selenium Java dependency is used to get access of Java based selenium-->
 		<dependency>
@@ -20,6 +20,36 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.11.0</version>
+		</dependency>
+
+		<!-- download from bonigarcia -->
+		<!-- when we use webdrivermanager, physical driver is not necessary -->
+		<!-- when we add a new dependency, don't build the framework, rather update project from maven -->
+		<!-- right click project, then maven, then update project -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>6.3.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
+		</dependency>
+		<!-- slf4j-simple, slf4j-api is used to remove the error message regarding slf4j in the console -->
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.17</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

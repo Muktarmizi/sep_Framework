@@ -9,7 +9,7 @@ public class LoginPageTest extends BaseClass{
 	
 @Test
 
-public void logintest() throws InterruptedException {
+public void logintest(){
 	
 	loginPage.loginWebsite();
 }
