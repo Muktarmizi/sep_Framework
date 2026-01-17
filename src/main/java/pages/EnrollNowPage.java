@@ -191,17 +191,6 @@ public class EnrollNowPage {
 	@FindBy(xpath = "//a[text()='Login Page']")
 	WebElement returnloginPage;
 
-	@FindBy(xpath = "//a[@id='termsLink']")
-	WebElement termsAndConditions;
-
-	@FindBy(xpath = "//button[@id='acceptButton']")
-	WebElement acceptButton;
-
-	@FindBy(xpath = "//input[@name='is_agree']")
-	WebElement doubleclickElement;
-
-	@FindBy(xpath = "//button[@id='submit_button']")
-	WebElement submitButton;
 
 	@FindBy(xpath = "//*[@id='id_f_name_error']")
 	public WebElement firstNameError;
@@ -241,6 +230,220 @@ public class EnrollNowPage {
 	
 	@FindBy(xpath = "//*[@id='id_birth_date_error']")
 	WebElement birthDayRequiredFieldElement;
+	
+	@FindBy(xpath = "//a[contains(text(),'Enroll')]")
+	WebElement enrollInTab;
+
+
+	@FindBy(xpath = "//small[@id='id_f_name_error']")
+	WebElement fNameRequiredFiledErrorMesssage;
+
+
+	@FindBy(xpath = "//small[@id='id_m_name_error']")
+	WebElement mNameRequiredFiledErrorMesssage;
+
+
+	@FindBy(xpath = "//small[@id='id_l_name_error']")
+	WebElement lNameRequiredFiledErrorMesssage;
+
+
+
+	@FindBy(xpath = "//select[@name='i_am']/option")
+	List<WebElement> selectProfessionlist;
+
+	@FindBy(xpath = "//small[@id='id_i_am_error']")
+	WebElement iamRequiredFiledErrorMesssage;
+
+
+	@FindBy(xpath = "//small[@id='id_course_wish_to_enroll_error']")
+	WebElement courseWishRequiredFiledErrorMesssage;
+
+	// phone number
+	@FindBy(xpath = "//input[@name='phone']")
+	WebElement phoneNum;
+
+	@FindBy(xpath = "//small[@id='id_phone_error']")
+	WebElement phoneNumberRequiredFiledErrorMesssage;
+
+	// email address
+	@FindBy(xpath = "//input[@name='email']")
+	WebElement emailAdd;
+
+	@FindBy(xpath = "//small[@id='id_email_error']")
+	WebElement emailAddressRequiredFiledErrorMesssage;
+
+	// password
+	@FindBy(xpath = "//input[@name='password']")
+	WebElement pass;
+
+	@FindBy(xpath = "//small[@id='id_password_error']")
+	WebElement passwordRequiredFiledErrorMesssage;
+
+	@FindBy(xpath = "//div[@id='password-requirements']")
+	WebElement passwordRequirementsMesssage;
+
+	@FindBy(xpath = "//i[@id='togglePwd']")
+	WebElement passwordEyeToggle;
+
+	// select gender
+	@FindBy(xpath = "//select[@id='id_gender']")
+	WebElement selectGender;
+	
+
+
+
+	@FindBy(xpath = "//option[text()='Female']")
+	WebElement enterGender;
+
+	// personal image
+	@FindBy(xpath = "//input[@name='image']")
+	WebElement chooseImage;
+
+	@FindBy(xpath = "//small[@id='id_image_error']")
+	WebElement chooseImageRequiredFiledErrorMesssage;
+
+	// photoId
+	@FindBy(xpath = "//input[@name='photo_id']")
+	WebElement choosePhotoId;
+
+	@FindBy(xpath = "//small[@id='id_photo_id_error']")
+	WebElement choosePhotoIdRequiredFiledErrorMesssage;
+
+	// birth year
+	@FindBy(xpath = "//select[@name='birth_year']")
+	WebElement selectBirthYear;
+
+	@FindBy(xpath = "//small[@id='id_birth_year_error']")
+	WebElement birthYearRequiredFiledErrorMesssage;
+
+	// birth month
+	@FindBy(xpath = "//select[@name='birth_month']")
+	WebElement selectBirthMonth;
+
+
+	@FindBy(xpath = "//small[@id='id_birth_month_error']")
+	WebElement birthMonthRequiredFiledErrorMesssage;
+	// birth year
+	@FindBy(xpath = "//select[@name='birth_date']")
+	WebElement selectBirthDate;
+
+	@FindBy(xpath = "//small[@id='id_birth_date_error']")
+	WebElement birthDateRequiredFiledErrorMesssage;
+	// home address
+	@FindBy(xpath = "//input[@name='home_address_line_1']")
+	WebElement homeAdd1;
+
+	@FindBy(xpath = "//small[@id='id_home_address_line_1_error']")
+	WebElement homeAdd1RequiredFiledErrorMesssage;
+
+	@FindBy(xpath = "//input[@name='home_address_line_2']")
+	WebElement homeAdd2;
+	@FindBy(xpath = "//small[@id='id_home_address_line_2_error']")
+	WebElement homeAdd2RequiredFiledErrorMesssage;
+
+	// city
+	@FindBy(xpath = "//input[@name='city']")
+	WebElement enterCity;
+
+	@FindBy(xpath = "//small[@id='id_city_error']")
+	WebElement cityRequiredFiledErrorMesssage;
+
+	// state status
+	@FindBy(xpath = "//select[@id='id_state']")
+	WebElement selectState;
+
+	@FindBy(xpath = "//select[@id='id_state']/option")
+	List<WebElement> selectStateList;
+
+	@FindBy(xpath = "//small[@id='id_state_error']")
+	WebElement stateRequiredFiledErrorMesssage;
+
+	// zipcode
+	@FindBy(xpath = "//input[@name='zip_code']")
+	WebElement enterZipcode;
+
+	@FindBy(xpath = "//small[@id='id_zip_code_error']")
+	WebElement zipCodeRequiredFiledErrorMesssage;
+
+	// Immigration status
+	@FindBy(xpath = "//select[@id='id_immigration_status']")
+	WebElement selectImmigrationStatus;
+
+	@FindBy(xpath = "//select[@id='id_immigration_status']/option")
+	List<WebElement> selectImmigrationStatusList;
+
+	// date of arrival
+	@FindBy(xpath = "//input[@id='id_arrival_date']")
+	WebElement enterDateOfArriVal;
+
+	@FindBy(xpath = "//small[@id='id_arrival_date_error']")
+	WebElement dateOfArrivalRequiredFiledErrorMesssage;
+
+	// emergency contact
+	@FindBy(xpath = "//input[@id='id_emergency_contact']")
+	WebElement enterEmergencyContact;
+
+	@FindBy(xpath = "//small[@id='id_emergency_contact_error']")
+	WebElement emergencyContactRequiredFiledErrorMesssage;
+
+
+	@FindBy(xpath = "//small[@id='id_know_us_error']")
+	WebElement knowUsRequiredFiledErrorMesssage;
+
+	// higher education
+	@FindBy(xpath = "//select[@id='id_highest_education']")
+	WebElement selectHigherEducation;
+
+	@FindBy(xpath = "//select[@id='id_highest_education']/option")
+	List<WebElement> selectHigherEducationList;
+
+	@FindBy(xpath = "//option[text()='Graduate']")
+	WebElement enterHigherEducation;
+
+	// origin of country
+	@FindBy(xpath = "//select[@id='id_country_of_origin']")
+	WebElement selectOriginCountry;
+
+	// primary language
+	@FindBy(xpath = "//input[@id='selected_language']")
+	WebElement selectPrimaryLanguage;
+
+	@FindBy(xpath = "//div[text()='Bengali']")
+	WebElement enterPrimaryLanguage;
+
+	// signature
+	@FindBy(xpath = "//input[@name='sign_by_name']")
+	WebElement signatureField;
+
+	@FindBy(xpath = "//small[@id='id_sign_by_name_error']")
+	WebElement signatureRequiredFiledErrorMesssage;
+
+	@FindBy(xpath = "//input[@name='is_agree']")
+	WebElement doubleclickElement;
+
+	@FindBy(xpath = "//button[@id='acceptButton']")
+	WebElement acceptButton;
+
+	@FindBy(xpath = "//a[@id='termsLink']")
+	WebElement termsAndConditions;
+
+	@FindBy(xpath = "//button[@id='submit_button']")
+	WebElement submitButton;
+
+	@FindBy(xpath = "//button[@id='customButton']")
+	WebElement rightClickButton;
+
+	@FindBy(xpath = "//li[text()='Back']")
+	WebElement rightClickBackButton;
+
+	@FindBy(xpath = "//li[text()='Cancel']")
+	WebElement rightClickCancelButton;
+	
+	@FindBy(xpath = "//li[onclick='handleCancel()']")
+	WebElement rightClickCancel1Button;
+	
+	@FindBy(xpath = "//form[@id='enrollForm']")
+	WebElement enrollForm;
 
 	
 	
@@ -446,172 +649,639 @@ public class EnrollNowPage {
 		pause(2000);
 	}
 
-	public void validatePhoneNumber() {
+	public void phone_number_validation() {
 		
-		
+		verifyLengthOfTheFieldContent(phoneNum, Attribute.MAX_LENGTH, "10");
+		pause(3000);
+		inputText(phoneNum, " ");		
 		pause(2000);
-		verifyLengthOfTheFieldContent(phone, Attribute.MAX_LENGTH, "10");
+		verifyErrorMessageUnderTheField(phoneNumberRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Phone Number is a required field.");
 		pause(2000);
-		
-		inputTextThenClickTab(phone," ");
-		verifyErrorMessageUnderTheField(phoneError,Attribute.INNER_HTML,"Phone Number is a required field.");
-		
-		inputTextThenClickTab(phone, "000000");
+		inputText(phoneNum, "&$%*&$#^");
+
+		pause(3000);
+		verifyErrorMessageUnderTheField(phoneNumberRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Phone Number must be exactly 10 digits.");
+		pause(3000);
+		clearTextFromTheField(phoneNum);
+		pause(3000);
+		inputText(phoneNum, "01240000000");
+
+		pause(3000);
+		verifyErrorMessageUnderTheField(phoneNumberRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Phone Number must not start with a 1 or 0.");
+		pause(3000);
+		clearTextFromTheField(phoneNum);
+		pause(3000);
+		clearTextFromTheField(phoneNum);
+		pause(3000);
+
+		inputTextThenClickTab(phoneNum, "9293306564");
 		pause(2000);
-		verifyErrorMessageUnderTheField(phoneError, Attribute.INNER_HTML, "Phone Number must be exactly 10 digits.");
-		pause(2000);
-		
-		clearTextFromTheField(phone);
-		inputText(phone,"9293306564");
-		
-		
+
 	}
-	public void validateEmail() {
 
-		verifyLengthOfTheFieldContent(email, Attribute.MAX_LENGTH, "74");
+	public void email_validation() {
+		
+		verifyLengthOfTheFieldContent(emailAdd, Attribute.MAX_LENGTH, "74");
+		pause(3000);
+		inputText(emailAdd, " ");		
 		pause(2000);
-		inputTextThenClickTab(email, "$#@%$#$^%$&^$&$^&^");
+		verifyErrorMessageUnderTheField(emailAddressRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Email Address is a required field.");
 		pause(2000);
-		verifyErrorMessageUnderTheField(emailRequiredField, Attribute.INNER_HTML, "Must be a valid Email Address.");
+		inputText(emailAdd, "Miurza@gmail");
+
+		pause(3000);
+		verifyErrorMessageUnderTheField(emailAddressRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be a valid Email Address.");
+		pause(3000);
+		clearTextFromTheField(emailAdd);
+		pause(3000);
+
+		inputText(emailAdd, "(*&**&fgfh#@@gmail.com");
+
+		pause(3000);
+
+		verifyErrorMessageUnderTheField(emailAddressRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be a valid Email Address.");
+		pause(3000);
+		clearTextFromTheField(emailAdd);
+		pause(3000);
+		inputTextThenClickTab(emailAdd, "Mirzashuvo79@gmail.com");
 		pause(2000);
+
 	}
 
-	public void password_validation() {
+	public void validatePassword() {
 
+		elementSelected(pass);
 		pause(2000);
-//		verifyLengthOfTheFieldContent(password, Attribute.MAX_LENGTH, "74");
-//		pause(2000);
-		inputTextThenClickTab(password, "$#@%$#$^%$&^$&$^&^");
+		elementDisplayed(passwordRequirementsMesssage);
+		inputText(pass, " ");
+
+		verifyErrorMessageUnderTheField(passwordRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Password is a required field.");
 		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "aBcds"); // Minimum of 8 characters.
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
+		inputText(pass, "4567");
+
+		clickElement(passwordEyeToggle);
+		pause(3000);
+		verifyErrorMessageUnderTheField(passwordRequiredFiledErrorMesssage, Attribute.INNER_HTML,
 				"Must contain a minimum of 8 characters.");
+		pause(3000);
+		clearTextFromTheField(pass);
+		pause(3000);
+
+		inputText(pass, "3456677f");
+
+		clickElement(passwordEyeToggle);
 		pause(2000);
-		inputTextThenClickTab(password, "shuvoMirza"); // Password cann't contain First and last name.
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
+
+		verifyErrorMessageUnderTheField(passwordRequiredFiledErrorMesssage, Attribute.INNER_HTML,
 				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "aaaaaaaaaaaaaaaa");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
+		pause(3000);
+		clearTextFromTheField(pass);
+		pause(3000);
+		inputText(pass, "3456677fF");
+
+		verifyErrorMessageUnderTheField(passwordRequiredFiledErrorMesssage, Attribute.INNER_HTML,
 				"Please refer to Password requirements.");
-		pause(2000);
-		pause(2000);
-		inputTextThenClickTab(password, "JHDJLFNDSJLNFKLDSNFKSNKSLNGSKNGKF");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
+		pause(3000);
+		clearTextFromTheField(pass);
+		pause(3000);
+		inputText(pass, "()*<>^9!+ /");
+		clickElement(passwordEyeToggle);
+
+		pause(3000);
+
+		verifyErrorMessageUnderTheField(passwordRequiredFiledErrorMesssage, Attribute.INNER_HTML,
 				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "Mirzashuvo79"); // Password cann't contain part of the Email.
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "Mirzashuvo79aaaaaaaaaa");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "821371029379102T*&%&*%&*");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "Mirzashuvo790");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "121837892748913743");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "Appleorange");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "Appleorange^(^*^**");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "Appleorange5234354364");
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Please refer to Password requirements.");
-		pause(2000);
-		inputTextThenClickTab(password, "shuvoMirza#1");// Password cannot contain First Name, Last Name, or email.
-		pause(2000);
-		verifyErrorMessageUnderTheField(passErrorRequired, Attribute.INNER_HTML,
-				"Password cannot contain First Name, Last Name, or email.");
+		pause(3000);
+		clearTextFromTheField(pass);
+		pause(3000);
+		inputTextThenClickTab(pass, "63487746fF@$");
+		clickElement(passwordEyeToggle);
 		pause(2000);
 
 	}
 
-	public void choose_file_validation() {
+	public void gendervalidation() {
+
+		selectElelementFromDropdownOnebyOne(selectGender, selectGenderList);
 		pause(2000);
-		clickElement(submitButton); 
+		selectDropdown(selectGender, "Female");
 		pause(2000);
-		verifyErrorMessageUnderTheField(chooseFileRequiredField, Attribute.INNER_HTML,
-				"Personal Image is a required field.");
+
+	}
+
+	public void choosePersonalImagevalidation() {
+		inputText(chooseImage, " ");
+		pause(2000);
+		verifyErrorMessageUnderTheField(chooseImageRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Personal Image is a required field.");
+		uploadPhotoImage(chooseImage, "./image/personalImage.jpg");
+		pause(2000);
+
+	}
+
+	public void choosePhotoIdvalidation() {
+		inputText(choosePhotoId, " ");		
+		pause(2000);
+		verifyErrorMessageUnderTheField(choosePhotoIdRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Photo Id is a required field.");
+		uploadPhotoImage(choosePhotoId, "./image/photoId.png");
+		pause(2000);
+
+	}
+
+	public void dateOfBirthValidation() {
+		scrollIntoViewTheElementUsingJavascriptExecutor(driver, submitButton);
+
+		inputText(selectBirthYear, " ");		
+		pause(2000);
+		verifyErrorMessageUnderTheField(birthYearRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Birth Year is a required field.");
+		pause(2000);
+		selectDropdown(selectBirthYear, "1978");
+		pause(2000);
+
+		inputText(selectBirthMonth, " ");		
+		pause(2000);
+		verifyErrorMessageUnderTheField(birthMonthRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Birth Month is a required field.");
+		pause(2000);
+
+		selectElelementFromDropdownOnebyOne(selectBirthMonth, selectBirthMonthList);
+		pause(2000);
+		selectDropdown(selectBirthMonth, "January");
+		pause(2000);
+
+		// selectElelementFromDropdownOnebyOne(selectBirthDate, selectBirthDateList);
+		// pause(2000);
+		inputText(selectBirthDate, " ");		
+		pause(2000);
+		verifyErrorMessageUnderTheField(birthDateRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Birth Date is a required field.");
+		pause(2000);
+		selectDropdown(selectBirthDate, "1");
+		pause(2000);
+
+	}
+
+	public void homeAddressLine1Validation() {
+		verifyLengthOfTheFieldContent(homeAdd1, Attribute.MAX_LENGTH, "60");
+		pause(3000);
+		 
+		inputText(homeAdd1, " ");
+		verifyErrorMessageUnderTheField(fNameRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Home Address Line 1 is a required field.");
+		pause(3000);
+		
+		inputText(homeAdd1, "&$%*&$#^");
+
+		pause(3000);
+		verifyErrorMessageUnderTheField(homeAdd1RequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be alphanumeric characters.");
+		pause(3000);
+		clearTextFromTheField(homeAdd1);
+		pause(3000);
+
+		inputText(homeAdd1, "7405_Lesada, dr"); //
+		pause(3000);
+
+	}
+
+	public void homeAddressLine2Validation() {
+		verifyLengthOfTheFieldContent(homeAdd2, Attribute.MAX_LENGTH, "65");
+		pause(3000);
+		
+		inputText(homeAdd2, "&$%*&$#^");
+
+		pause(3000);
+		verifyErrorMessageUnderTheField(homeAdd2RequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be alphanumeric characters.");
+		pause(3000);
+		clearTextFromTheField(homeAdd2);
+		pause(3000);
+
+		inputText(homeAdd2, "Adsfg123456"); //
+		pause(3000);
+
+	}
+
+	public void cityValidation() {
+		verifyLengthOfTheFieldContent(enterCity, Attribute.MAX_LENGTH, "30");
+		pause(2000);
+		inputText(enterCity, " ");
+		verifyErrorMessageUnderTheField(cityRequiredFiledErrorMesssage, Attribute.INNER_HTML, "City is a required field.");
+		pause(2000);
+		inputText(enterCity, "234");
+		pause(2000);
+		verifyErrorMessageUnderTheField(cityRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be alphabetic characters.");
+
+		pause(2000);
+		clearTextFromTheField(enterCity);
+		pause(2000);
+		inputText(enterCity, "%^%$$%^");
+		pause(2000);
+		verifyErrorMessageUnderTheField(cityRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be alphabetic characters.");
+
+		pause(2000);
+		clearTextFromTheField(enterCity);
+		pause(2000);
+
+		inputText(enterCity, "fsgf'hfh");
+		pause(2000);
+
+	}
+
+	public void stateValidation() {
+
+		inputText(selectState, " ");		
+		pause(2000);
+		verifyErrorMessageUnderTheField(stateRequiredFiledErrorMesssage, Attribute.INNER_HTML, "State is a required field.");
+		pause(2000);
+
+		selectDropdown(selectState, "Maryland");
+		pause(2000);
+
+	}
+
+	public void zipCodeValidation() {
+		verifyLengthOfTheFieldContent(enterZipcode, Attribute.MAX_LENGTH, "5");
+		pause(2000);
+		inputText(enterZipcode, " ");		
+		pause(2000);
+		verifyErrorMessageUnderTheField(zipCodeRequiredFiledErrorMesssage, Attribute.INNER_HTML, "ZIP Code is a required field.");
+		pause(2000);
+		inputText(enterZipcode, "abvgh");
+		pause(2000);
+		verifyErrorMessageUnderTheField(zipCodeRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be a valid numeric ZIP Code.");
+
+		pause(2000);
+		clearTextFromTheField(enterZipcode);
+		pause(2000);
+		inputText(enterZipcode, "%^%$$");
+		pause(2000);
+		verifyErrorMessageUnderTheField(zipCodeRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be a valid numeric ZIP Code.");
+
+		pause(2000);
+		clearTextFromTheField(enterZipcode);
+		pause(2000);
+
+		inputText(enterZipcode, "23456");
+		pause(2000);
+
+	}
+
+	public void immigrationValidation() {
+		elementSelected(selectImmigrationStatus);
+		pause(2000);
+		selectElelementFromDropdownOnebyOne(selectImmigrationStatus, selectImmigrationStatusList);
+		pause(2000);
+		selectDropdown(selectImmigrationStatus, "Citizen");
+		pause(2000);
+
+		inputTextThenClickTab(selectImmigrationStatus, "Citizen");
 		pause(2000);
 	}
 
-	public void choose_photo_validation() {
+	public void dateOfArrivalValidation() {
+		elementSelected(enterDateOfArriVal);
+		inputText(enterDateOfArriVal, "=-@$%^Z");
+		pause(2000);
+		verifyErrorMessageUnderTheField(dateOfArrivalRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Invalid characters.");
+
+		clearTextFromTheField(enterDateOfArriVal);
+		pause(2000);
+		inputText(enterDateOfArriVal, "10/20/2015");
+		pause(2000);
+
+	}
+
+	public void emergencyContactValidation() {
+		verifyLengthOfTheFieldContent(enterEmergencyContact, Attribute.MAX_LENGTH, "150");
+		pause(2000);
+
+		elementSelected(enterEmergencyContact);
+		inputText(enterEmergencyContact, "^-=$$^&");
+		pause(2000);
+		verifyErrorMessageUnderTheField(emergencyContactRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Invalid characters.");
+		pause(2000);
+		clearTextFromTheField(enterEmergencyContact);
+		pause(2000);
+		inputText(enterEmergencyContact, "Sharif");
+		pause(2000);
+
+	}
+
+	public void knowAboutUsValidation() {
+
+		verifyLengthOfTheFieldContent(knowAboutUs, Attribute.MAX_LENGTH, "500");
+		pause(3000);
+		elementSelected(knowAboutUs);
+		inputText(middleName, "&$%*&$#^,.");
+
+		pause(3000);
+		verifyErrorMessageUnderTheField(knowUsRequiredFiledErrorMesssage, Attribute.INNER_HTML, "");
+		pause(3000);
+		clearTextFromTheField(knowAboutUs);
+		pause(3000);
+
+		inputText(knowAboutUs, "45436");
+		pause(3000);
+		verifyErrorMessageUnderTheField(knowUsRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Must be alphabetic characters.");
+		pause(3000);
+		clearTextFromTheField(knowAboutUs);
+		pause(3000);
+		inputText(knowAboutUs, "InterNet'");
+		pause(3000);
+
+	}
+
+	public void higherEducationValidation() {
+
+		elementSelected(selectHigherEducation);
+		pause(2000);
+		selectElelementFromDropdownOnebyOne(selectHigherEducation, selectHigherEducationList);
+		pause(2000);
+		selectDropdown(selectHigherEducation, "MS");
+		pause(2000);
+
+	}
+
+	public void originCountryValidation() {
+
+		inputTextThenClickTab(selectOriginCountry, "Bangladesh");
+		pause(2000);
+
+	}
+
+	public void primaryLanguageValidation() {
+
+		afterHoverOverClickToAnEelement(driver, selectPrimaryLanguage, enterPrimaryLanguage);
+		pause(2000);
+	}
+
+	public void signatureValidation() {
+		verifyLengthOfTheFieldContent(signatureField, Attribute.MAX_LENGTH, "150");
+		inputText(signatureField, " ");
+		verifyErrorMessageUnderTheField(signatureRequiredFiledErrorMesssage, Attribute.INNER_HTML, "Signature is a required field.");
+		pause(2000);
+		inputText(signatureField, "abvgh hkjh");
+		pause(2000);
+		verifyErrorMessageUnderTheField(signatureRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Please provide your full name as above");
 
 		pause(2000);
+		clearTextFromTheField(signatureField);
+		pause(2000);
+		inputText(signatureField, "%^%$$");
+		pause(2000);
+		verifyErrorMessageUnderTheField(signatureRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Please provide your full name as above");
+		pause(2000);
+		clearTextFromTheField(signatureField);
+		pause(2000);
+
+		inputText(firstName, "Tania");
+		inputText(lastName, "Sultana");
+		scrollIntoViewTheElementUsingJavascriptExecutor(driver, signatureField);
+		inputText(signatureField, "Tania Sultana");
+		pause(2000);
+
+	}
+
+	public void useOfDoubleClickAction() {
+
+		Actions actions = new Actions(driver);
+		actions.doubleClick(termsAndConditions).build().perform();
+		pause(2000);
+
+		clickElement(acceptButton);
+		pause(2000);
+		clickElement(doubleclickElement);
+		pause(2000);
+
+	}
+
+	public void submitvalidation() {
 		clickElement(submitButton);
 		pause(2000);
-		verifyErrorMessageUnderTheField(choosePhotoRequiredField, Attribute.INNER_HTML,
+		verifyErrorMessageUnderTheField(fNameRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				" First Name is a required field. ");
+		pause(3000);
+		verifyErrorMessageUnderTheField(lNameRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				" Last Name is a required field. ");
+		pause(3000);
+		verifyErrorMessageUnderTheField(iamRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"I'm is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(courseWishRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Course wish to enroll is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(phoneNumberRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Phone Number is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(emailAddressRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Email Address is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(passwordRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Password is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(chooseImageRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Personal Image is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(choosePhotoIdRequiredFiledErrorMesssage, Attribute.INNER_HTML,
 				"Photo Id is a required field.");
-		pause(2000);
-	}
-
-	public void birth_year_validation() {
-
-		pause(2000);
-		selectDropdown(birthYear, "Select Birth Year");
-		pause(2000);
-		clickElementThenTab(birthYear);
-		pause(2000);
-		verifyErrorMessageUnderTheField(birthYearRequiredFieldElement, Attribute.INNER_HTML,
+		pause(3000);
+		verifyErrorMessageUnderTheField(birthYearRequiredFiledErrorMesssage, Attribute.INNER_HTML,
 				"Birth Year is a required field.");
-		pause(2000);
-
-	}
-
-	public void birth_month_validation() {
-
-		pause(2000);
-		selectElelementFromDropdownOnebyOne(birthMonth, selectBirthMonthList);
-		pause(2000);
-		selectDropdown(birthMonth, "Select Birth Month");
-		pause(2000);
-		clickElementThenTab(birthMonth);
-		pause(2000);
-		verifyErrorMessageUnderTheField(birthMonthRequiredFieldElement, Attribute.INNER_HTML,
-			"Birth Month is a required field.");
-		pause(2000);
-	}
-
-	public void birth_day_validation() {
-
-		pause(2000);
-		selectDropdown(birthDate, "Select Birth Date");
-		pause(2000);
-		clickElementThenTab(birthDate);
-		pause(2000);
-		verifyErrorMessageUnderTheField(birthDayRequiredFieldElement, Attribute.INNER_HTML,
+		pause(3000);
+		verifyErrorMessageUnderTheField(birthMonthRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Birth Month is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(birthDateRequiredFiledErrorMesssage, Attribute.INNER_HTML,
 				"Birth Date is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(homeAdd1RequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Home Address Line 1 is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(cityRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"City is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(stateRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"State is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(zipCodeRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"ZIP Code is a required field.");
+		pause(3000);
+		verifyErrorMessageUnderTheField(signatureRequiredFiledErrorMesssage, Attribute.INNER_HTML,
+				"Signature is a required field.");
+		pause(3000);
+
+	}
+
+	public void rightClickBackCancelValidation() {
+		Actions actions = new Actions(driver);
+		actions.contextClick(rightClickButton).perform();
 		pause(2000);
-}
+		
+		actions.contextClick(rightClickBackButton).click().perform();
+
+		
+		Alert alert = driver.switchTo().alert();
+		pause(3000);
+		System.out.println("The text present in the alert is: " + alert.getText());
+		alert.dismiss();
+		pause(2000);
+		clickElement(enrollForm);
+		pause(2000);
+	}
+	public void rightClickBackOkValidation() {
+		Actions actions = new Actions(driver);
+		actions.contextClick(rightClickButton).perform();
+		pause(2000);
+		
+		actions.contextClick(rightClickBackButton).click().perform();
+
+		
+		Alert alert = driver.switchTo().alert();
+		pause(3000);
+		System.out.println("The text present in the alert is: " + alert.getText());
+		alert.accept();
+		pause(2000);
+		
+		
+		
+	}
 	
+	public void rightClickCancelOkValidation() {
+		Actions actions = new Actions(driver);
+		actions.contextClick(rightClickButton).perform();
+		pause(2000);
+		
+		actions.contextClick(rightClickCancel1Button).click().perform();
+
+		
+		Alert alert = driver.switchTo().alert();
+		pause(3000);
+		System.out.println("The text present in the alert is: " + alert.getText());
+		alert.accept();
+		pause(2000);
+		
+		
+	}
+	public void rightClickcancel2Validation() {
+		Actions actions = new Actions(driver);
+		actions.contextClick(rightClickButton).perform();
+		pause(2000);
+		
+		actions.contextClick(rightClickCancel1Button).click().perform();
+
+		
+		Alert alert = driver.switchTo().alert();
+		pause(3000);
+		System.out.println("The text present in the alert is: " + alert.getText());
+		
+		
+		alert.dismiss();
+		
+		pause(1000);
+	}
+
+	public void happyPathOfSubmitForm() {
+		clickElement(firstName);
+
+		inputTextThenClickTab(firstName, "Tania");
+		pause(2000);
+		inputTextThenClickTab(middleName, "");
+		inputTextThenClickTab(lastName, "Sultana");
+		pause(2000);
+		selectElelementFromDropdownOnebyOne(selectProfession, selectProfessionlist);
+		pause(2000);
+		selectDropdown(selectProfession, "a Student");
+		pause(2000);
+		selectElelementFromDropdownOnebyOne(selectCourse, selectCourseList);
+		pause(2000);
+		selectDropdown(selectCourse, "Python");
+		pause(2000);
+		inputTextThenClickTab(phoneNum, "6467342981");
+		pause(2000);
+		inputTextThenClickTab(emailAdd, "jarinabibi18@gmail.com");
+		pause(2000);
+		inputTextThenClickTab(pass, "Tansul1971@");
+		pause(2000);
+
+		selectElelementFromDropdownOnebyOne(selectGender, selectGenderList);
+		pause(2000);
+		selectDropdown(selectGender, "Female");
+		pause(2000);
+		uploadPhotoImage(chooseImage, "./image/personalImage.jpg");
+		pause(2000);
+		uploadPhotoImage(choosePhotoId, "./image/photoId.png");
+		pause(2000);
+
+		scrollIntoViewTheElementUsingJavascriptExecutor(driver, submitButton);
+
+		// (selectBirthYear, selectBirthYearList);
+		pause(2000);
+		selectDropdown(selectBirthYear, "1978");
+		pause(2000);
+
+		selectElelementFromDropdownOnebyOne(selectBirthMonth, selectBirthMonthList);
+		pause(2000);
+		selectDropdown(selectBirthMonth, "January");
+		pause(2000);
+
+		// selectElelementFromDropdownOnebyOne(selectBirthDate, selectBirthDateList);
+		// pause(2000);
+		selectDropdown(selectBirthDate, "1");
+		pause(2000);
+
+		inputTextThenClickTab(homeAdd1, "7405 Lesada drive");
+		pause(2000);
+		inputTextThenClickTab(homeAdd2, "");
+		pause(2000);
+		inputTextThenClickTab(enterCity, "Windsor Mill");
+		pause(2000);
+
+		inputTextThenClickTab(selectState, "Maryland");
+		pause(2000);
+		inputTextThenClickTab(enterZipcode, "21244");
+		pause(2000);
+		inputTextThenClickTab(selectImmigrationStatus, "Citizen");
+		pause(2000);
+		inputTextThenClickTab(enterDateOfArriVal, "10/20/2015");
+		pause(2000);
+		inputTextThenClickTab(enterEmergencyContact, "Sharif");
+		pause(2000);
+
+		inputTextThenClickTab(knowAboutUs, "Facebook");
+		pause(2000);
+		selectElelementFromDropdownOnebyOne(selectHigherEducation, selectHigherEducationList);
+		pause(2000);
+		selectDropdown(selectHigherEducation, "MS");
+		pause(2000);
+		inputTextThenClickTab(selectOriginCountry, "Bangladesh");
+		pause(2000);
+
+		afterHoverOverClickToAnEelement(driver, selectPrimaryLanguage, enterPrimaryLanguage);
+		pause(2000);
+
+		inputTextThenClickTab(signatureField, "Tania Sultana");
+		pause(2000);
+		Actions actions = new Actions(driver);
+		actions.doubleClick(termsAndConditions).build().perform();
+		pause(2000);
+
+		clickElement(acceptButton);
+		pause(2000);
+		clickElement(doubleclickElement);
+		pause(2000);
+
+		clickElement(submitButton);
+
+	}
 	
 }
